@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register Now</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css files -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />                  <!-- bootstrap css -->
+    <link href="main.css" rel=" stylesheet" type="text/css" media="screen">               <!-- custom css -->
+    <!-- js files -->
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="banner-register" id="profile">
+        <div class="layer-register">
+            <!--navbar-->
+            <div class="container-fluid nav-holder">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/exam2.jpg" width="90" height="50" style="border-radius:0.35rem" />
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-active" href="index.html"><b>Home</b> <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#about"><b>About</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#courses"><b>Courses</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="profile.html"><b>Profile</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#team"><b>Team</b></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+
+            <!--form-->
+            <div class="login-inbox">
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="form-row justify-content-center">
+                                <input id="fName" type="text" class="form-control register" placeholder="First Name" required>
+                                <input id="lName" type="text" class="form-control register" placeholder="Last Name" required>
+                                <input id="mail" type="email" class="form-control register" placeholder="E-mail ex:name@any.com" required>
+                                <input id="pass" type="password" class="form-control register" placeholder="password" required>
+                            </div>
+                            <div><input id="btn_signup" type="button" class="form-control" value="Sign up"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--copyright-->
+    <div class="container-fluid copyright">
+        <div class="container py-4 rightContainer text-center">
+            <p>
+                © 2019<a href="index.html"><img src="images/exam2.jpg" width="70" height="30" style="border-radius:0.35rem" /></a>.
+                All rights reserved | Design by MHY
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var signupbtn = document.getElementById("btn_signup");
+    signupbtn.onclick = function () {
+        var fname = document.getElementById("fName");
+        var lname = document.getElementById("lName");
+        var mail = document.getElementById("mail");
+        var pass = document.getElementById("pass");
+
+        var first = fname.value;
+        var last = lname.value;
+        var ma = mail.value;
+        var passwrd = pass.value;
+
+
+        var arr_users = [];
+        arr_users = JSON.parse(localStorage.getItem("users"))
+        if (arr_users == null) {
+            arr_users = [];
+        }
+
+        var user = {}
+
+        user.first = first;
+        user.last = last;
+        user.ma = ma;
+        user.passwrd = passwrd;
+        arr_users.push(user);
+        localStorage.setItem("users", JSON.stringify(arr_users));
+
+        window.location.href = "index.html";
+
+    }
+</script>

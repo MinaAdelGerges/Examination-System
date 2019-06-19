@@ -1,0 +1,532 @@
+﻿.banner-home {
+		background: url(images/banner.jpg)no-repeat;
+        width:100%;
+        min-height:650px;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+		background-size: cover;
+	}
+
+.banner-profile {
+    background: url(images/banner2.jpg)no-repeat;
+    width: 100%;
+    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.banner-register {
+    background: url(images/banner3.jpg)no-repeat;
+    width: 100%;
+    min-height: 900px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+.banner-exam {
+    background: url(images/banner4.jpg)no-repeat;
+    width: 100%;
+    min-height: 800px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+
+.layer-home {
+    width: 100%;
+    min-height: 650px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.layer-profile {
+    width: 100%;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.layer-register {
+    width: 100%;
+    min-height: 900px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.layer-exam {
+    width: 100%;
+    min-height: 800px;
+    background: rgba(0, 0, 0, 0.3);
+}
+/*--------------------------------navbar------------------------------*/
+.nav-holder {
+    background-image: url(images/backNav.png);
+    background-color: #e1dad1;
+    opacity: 0.6;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link,
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #bb3032;
+    font-size: large;
+}
+.nav-item {
+    border-bottom: 1px solid #e1dad1;
+}
+.nav-item:hover {
+    border-bottom: 1px solid #822422;
+}
+
+.mr-auto, .mx-auto{
+    margin-left:auto !important;
+}
+
+.navbar .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.5);
+
+}
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(187, 48, 50,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+#welcome_user {
+    margin-right: 20px;
+    color: #0077af;
+    font-size:1.3rem;
+}
+
+#user_name, #user_email {
+    color: #00712a;
+    margin-left: 40px;
+}
+/*--------------------------------slider------------------------------*/
+.myFirstSlider, .carousel-item {
+    height: 550px;
+}
+
+.carousel-caption {
+    top: 40%;
+    bottom: auto;
+}
+
+.carousel-caption p {
+        font-size: 1.3rem;
+    }
+
+.container-fluid .hint {
+    color: #c53540;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+/*--------------------------------about------------------------------*/
+
+.containerAbout {
+    background-image: url(images/backNav.png);
+    background-color: #e1dad1;
+    opacity: 0.9;
+    height: auto;
+    padding: 60px 40px 0px;
+}
+
+.aboutContainer {
+    background-color: #ffffff;
+    min-height: 120px;
+}
+
+/*--------------------------------courses------------------------------*/
+
+.containerCourse {
+    background-image: url(images/backNav.png);
+    background-color: #e1dad1;
+    opacity: 0.9;
+    padding: 60px 40px 0px;
+}
+.cardTwo {
+    margin-top: 50px;
+}
+.card-img-top{
+    width:40%;
+    height:40%;
+    align-self:center;
+}
+.card-img-top:hover {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+/*--------------------------------team------------------------------*/
+.containerTeam {
+    background-image: url(images/backNav.png);
+    background-color: #e1dad1;
+    opacity: 0.9;
+    padding: 60px 40px 0px;
+    height: auto;
+}
+
+
+.card {
+    height: auto;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+
+    .personal-body, .personal-footer{
+        visibility:hidden;
+    }
+
+.name {
+    cursor: pointer;
+
+}
+
+.photo, .name, .task {
+    align-self: center;
+}
+
+.task {
+    background-color: #ffffff;
+    opacity: 0.6;
+    color: #000000;
+    font-size:1.1rem;
+    
+
+}
+/*--------------------------------copyright------------------------------*/
+.copyright {
+    background-image: url(images/backNav.png);
+    background-color: #e1dad1;
+    opacity: 0.9;
+    height: auto;
+    padding: 60px 40px 0px;
+}
+
+.rightContainer {
+    background-color: #ffffff;
+    min-height: 50px;
+}
+
+
+/*---------------------------------register---------------------------------*/
+.login-inbox {
+    background-color:rgba(205, 205, 205,0.5);
+    text-align: center;
+    width: 380px;
+    height: 450px;
+    color: #fbc105;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+.form-row{
+    padding-top:50px;
+    height:80%;
+align-self:center
+
+}
+.register {
+    align-self: center;
+    margin-bottom: 20px;
+    width:250px;
+    color: #c9a95f;
+    border: none;
+    border-top: 1px solid #fbc105;
+}
+#btn_signup {
+    margin-top: 30px;
+    border-bottom: 1px solid #fbc105;
+    border-top: 1px solid #fbc105;
+}
+
+/*-------------------------------------------profile--------------------------------------------*/
+.userData{
+    margin-top:60px;
+}
+.data{
+    margin-bottom:30px;
+    color:#ffffff;
+    font-size:1.3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap*/
+@media (max-width: 575px) {
+    .banner-home {
+        background: url(images/banner.jpg)no-repeat;
+        width: 100%;
+        min-height: 200px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-home {
+        width: 100%;
+        min-height: 200px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .banner-profile {
+        background: url(images/banner2.jpg)no-repeat;
+        width: 100%;
+        min-height: 300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+    .layer-profile {
+        width: 100%;
+        min-height: 300px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-register {
+        background: url(images/banner3.jpg)no-repeat;
+        width: 100%;
+        min-height: 500px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+    .layer-register {
+        width: 100%;
+        min-height: 500px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .banner-exam {
+        background: url(images/banner4.jpg)no-repeat;
+        width: 100%;
+        min-height: 400px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+    .layer-exam {
+        width: 100%;
+        min-height: 400px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .banner-home {
+        background: url(images/banner.jpg)no-repeat;
+        width: 100%;
+        min-height: 300px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-home {
+        width: 100%;
+        min-height: 300px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .banner-profile {
+        background: url(images/banner2.jpg)no-repeat;
+        width: 100%;
+        min-height: 500px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-profile {
+        width: 100%;
+        min-height: 500px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-register {
+        background: url(images/banner3.jpg)no-repeat;
+        width: 100%;
+        min-height: 550px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-register {
+        width: 100%;
+        min-height: 550px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-exam {
+        background: url(images/banner4.jpg)no-repeat;
+        width: 100%;
+        min-height: 450px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-exam {
+        width: 100%;
+        min-height: 450px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    
+    .navbar-brand img {
+        width: 70px;
+        height: 35px;
+        border-radius: 0.35rem;
+    }
+
+    .myFirstSlider, .carousel-item {
+        height: 250px;
+    }
+
+    .carousel-caption {
+        top: 40%;
+        bottom: auto;
+    }
+
+        .carousel-caption h3 {
+            font-size: 1rem;
+        }
+
+        .carousel-caption p {
+            font-size: 0.8rem;
+        }
+}
+    /*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner-home {
+        background: url(images/banner.jpg)no-repeat;
+        width: 100%;
+        min-height: 400px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-home {
+        width: 100%;
+        min-height: 400px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .banner-profile {
+        background: url(images/banner2.jpg)no-repeat;
+        width: 100%;
+        min-height: 600px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-profile {
+        width: 100%;
+        min-height: 600px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-register {
+        background: url(images/banner3.jpg)no-repeat;
+        width: 100%;
+        min-height: 600px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-register {
+        width: 100%;
+        min-height: 600px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .banner-exam {
+        background: url(images/banner4.jpg)no-repeat;
+        width: 100%;
+        min-height: 500px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-exam {
+        width: 100%;
+        min-height: 500px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+}
+    /*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner-home {
+        background: url(images/banner.jpg)no-repeat;
+        width: 100%;
+        min-height: 500px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-home {
+        width: 100%;
+        min-height: 500px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+    /*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width:4000px) {
+    .banner-home {
+        background: url(images/banner.jpg)no-repeat;
+        width: 100%;
+        min-height: 600px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+    }
+
+    .layer-home {
+        width: 100%;
+        min-height: 600px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}

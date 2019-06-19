@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Profile</title>
+
+    <!-- css files -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />                  <!-- bootstrap css -->
+    <link href="main.css" rel=" stylesheet" type="text/css" media="screen">               <!-- custom css -->
+    <!-- js files -->
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="banner-profile" id="profile">
+        <div class="layer-profile">
+            <!--navbar-->
+            <div class="container-fluid nav-holder">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="loggedIndex.html">
+                            <img src="images/exam2.jpg" width="90" height="50" style="border-radius:0.35rem" />
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-active" href="loggedIndex.html"><b>Home</b> <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="loggedIndex.html#about"><b>About</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="loggedIndex.html#courses"><b>Courses</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="profile.html"><b>Profile</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="loggedIndex.html#team"><b>Team</b></a>
+                                </li>
+                            </ul>
+                            <span id="welcome_user">Welcome: <b id="welcome-name"></b></span>
+                            <button id="logout_btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Logout</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <!--Data-->
+            <div class="container">
+                <div class="row userData">
+                    <div class="col-12 data">
+                      
+                        <table class="table table-dark">
+                            <thead>
+                                <!--<tr>
+                                    <th scope="col">Number</th>
+                                    <th scope="col">Exam Name:</th>
+                                    <th scope="col">Exam Score:</th>
+                                </tr>-->
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <th scope="row" >Name:</th>
+                                    <td id="name"></td>
+                                </tr>
+                                <tr >
+                                    <th scope="row" >Email:</th>
+                                    <td id="email"></td>
+                                </tr>
+                                <tr id="exam-name">
+                                    <th scope="row">Exam Name:</th>
+
+                                </tr>
+                                <tr id="exam-score">
+                                    <th scope="row">Exam Score:</th>
+                                </tr>
+                            </tbody>
+                        </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    var logout = document.getElementById("logout_btn");
+    logout.onclick = btn_logout_click;
+
+    var user = JSON.parse(sessionStorage.getItem("user"));    
+    document.getElementById("name").innerText = user.first + " " + user.last;
+    document.getElementById("email").innerText = user.ma;
+    document.getElementById('welcome-name').innerHTML = user.first + " " + user.last;
+
+    var course = JSON.parse(localStorage.getItem("courses"));
+    for (var i = 0; i < JSON.parse(localStorage.getItem("courses")).length; i++) {
+        if (JSON.parse(sessionStorage.getItem("user")).ma == document.getElementById("email").textContent) {
+            var tdd = document.createElement('td');
+            var tdd2 = document.createElement('td');
+            document.getElementById("exam-name").appendChild(tdd)
+            tdd.innerText += course[i].name;
+            document.getElementById("exam-score").appendChild(tdd2)
+            tdd2.innerHTML += course[i].score;
+        }
+    }
+
+    function btn_logout_click() {
+        window.location.href = "index.html";
+        sessionStorage.clear();
+    }
+
+</script>

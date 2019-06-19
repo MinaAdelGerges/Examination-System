@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Examination System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css files -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />                  <!-- bootstrap css -->
+    <link href="main.css" rel=" stylesheet" type="text/css" media="screen">               <!-- custom css -->
+    <!-- js files -->
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="teamDetails.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="banner-home" id="home">
+        <div class="layer-home">
+            <!--navbar-->
+            <div class="container-fluid nav-holder">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/exam2.jpg" width="90" height="50" style="border-radius:0.35rem" />
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"><b>Home</b> <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about"><b>About</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#courses"><b>Courses</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile_check" href="#"><b>Profile</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team"><b>Team</b></a>
+                                </li>
+                            </ul>
+
+                            <button id="register_btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Register</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!--slider-->
+            <div class="container">
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide myFirstSlider" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-caption">
+                                    <h3>Web Programming Exams</h3>
+                                    <p>Here are very interesting web programming exams.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h3>Quick and New</h3>
+                                    <p>Exams don't take more than 20 minutes. Questions are sync to all new features.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-caption">
+                                    <h3>Have a profile</h3>
+                                    <p>In <b>Profile</b>, You will find all your records in all exams you passed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Sign in</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!--Log in Form-->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Email</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Password</label>
+                            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Enter your password">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <span>Don't have an account? <a href="signup.html">Sign up</a></span>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="btn_login"class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--about-->
+    <div class="container-fluid containerAbout" id="about">
+        <div class="text-center">
+            <p class="hint"><b>About</b></p>
+        </div>
+        <div class="container aboutContainer">
+            <div class="col-12">
+                <p class="about text-center">
+                    The <a href="index.html"><img src="images/exam2.jpg" width="90" height="50" style="border-radius:0.35rem" /></a>
+                    is an examination website which presents professional exams in many topics of web programming such as HTML5, CSS3, JS and Bootstrap.
+                </p>
+                <p class="text-center">
+                    Nearly you will be able to get a certificate in each exam you will pass for <b>Free!</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--courses-->
+    <div class="container-fluid containerCourse" id="courses">
+        <div class="text-center">
+            <p class="hint"><b>Courses</b></p>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <!--html5-card-->
+                <div class="card text-center">
+                    <img src="images/html5.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">HTML5</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" id="html_check" class="btn btn-primary">Go to test</a>
+                    </div>
+                </div>
+                <!--css3-card-->
+                <div class="card text-center">
+                    <img src="images/css3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">CSS3</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" id="css_check" class="btn btn-primary">Go to test</a>
+                    </div>
+                </div>
+                <!--js-card-->
+                <div class="card text-center">
+                    <img src="images/js.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">JS</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" id="js_check" class="btn btn-primary">Go to test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card-deck">
+                <!--sql-card-->
+                <div class="card text-center cardTwo">
+                    <img src="images/sql.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">SQL</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" id="sql_check" class="btn btn-primary">Go to test</a>
+                    </div>
+                </div>
+                <!--bootstrap-card-->
+                <div class="card text-center cardTwo">
+                    <img src="images/bootstrap.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">BootStrap</h4>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" id="bootstrap_check" class="btn btn-primary">Go to test</a>
+                    </div>
+                </div>
+                <!--c-charp-card-->
+                <div class="card text-center cardTwo">
+                    <img src="images/c.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">C#</h4>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" id="c_check" class="btn btn-primary">Go to test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--team-->
+    <div class="container-fluid containerTeam" id="team">
+        <div class="text-center">
+            <p class="hint"><b>Team</b></p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center teamRow">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/mina.jpg" class="photo" alt="">
+                    <h5 class="name"><b>Mina Adel</b></h5>
+                    <p class="task">Designed and implemented all <b>Exams </b>files.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/hadeer.jpg" class="photo" alt="">
+                    <h5 class="name"><b>Hadeer ElDegwey</b></h5>
+                    <p class="task">Designed and implemented <b>sign up form </b>and stored users' data in localstorage of the browser.</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/yomna.jpg" class="photo" alt="">
+                    <h5 class="name"><b>Yomna Salah</b></h5>
+                    <p class="task">Designed and implemented each of <b>Home</b> page, <b>Profile</b> page and <b>Modal</b> of sign in.</p></div>
+                </div>
+        </div>
+    </div>
+
+    <!--copyright-->
+    <div class="container-fluid copyright">
+        <div class="container py-4 rightContainer text-center">
+            <p>
+                © 2019<a href="index.html"><img src="images/exam2.jpg" width="70" height="30" style="border-radius:0.35rem" /></a>.
+                All rights reserved | Design by MHY
+            </p>
+        </div>
+    </div>
+</body>
+</html>

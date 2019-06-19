@@ -1,0 +1,46 @@
+﻿body
+{
+  
+}
+h3{
+    margin-bottom:20px;
+    margin-top:20px;
+}
+label{
+    position: relative;
+    margin-bottom: 1px;
+    cursor: pointer;
+    font-size: 18px;
+}
+span{
+    font-family: "Segoe UI",Arial,sans-serif;
+        background-color:#c7c2bb;
+        padding:10px;
+        margin-left:30px;
+        opacity:0.6;
+        
+}
+
+span:hover{
+    background-color: #ddd;
+}
+input[type=radio]{
+height: 19px;
+width: 19px;
+border-radius: 50%;
+margin-right:10px;
+}
+#timer{
+    position:fixed;
+    top:1%;
+    right:0;
+    background-color:palevioletred
+}
+
+#click{
+      margin:auto 50%;
+            background-color:#4489d3;
+            font-size:18px;
+            padding:10px;
+            width:100px;
+}

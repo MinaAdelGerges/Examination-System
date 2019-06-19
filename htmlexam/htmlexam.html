@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Exam</title>
+    <!-- css files -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>                  <!-- bootstrap css -->
+    <link href="../main.css" rel=" stylesheet" type="text/css" media="screen">               <!-- custom css -->
+    <link rel="stylesheet" href="htmlexam.css" />                                           <!-- custom css -->
+    <script src="../js/bootstrap.js"></script>
+    <script src="../loggedMain.js"></script>
+    <script src="htmlexam.json"></script>
+    <script src="htmlexam.js"></script>
+</head>
+<body>
+    <div class="banner-exam" id="exam">
+        <div class="layer-exam">
+            <!--navbar-->
+            <div class="container-fluid nav-holder">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="../loggedIndex.html">
+                            <img src="../images/exam2.jpg" width="90" height="50" style="border-radius:0.35rem" />
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-active" href="../loggedIndex.html"><b>Home</b> <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../loggedIndex.html#about"><b>About</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../loggedIndex.html#courses"><b>Courses</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../profile.html"><b>Profile</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../loggedIndex.html#team"><b>Team</b></a>
+                                </li>
+                            </ul>
+                            <span id="welcome_user">Welcome: <b id="welcome-name"></b></span>
+                            <button id="logout_btn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Logout</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!--question1-->
+            <h3></h3>
+            <span><input type="radio" name="q1" value="A1" id="answer1" /><label></label></span>
+            <span><input type="radio" name="q1" value="A2" /><label></label></span><br /><br />
+            <span><input type="radio" name="q1" value="A3" /><label></label></span>
+            <span><input type="radio" name="q1" value="A4" /><label></label></span>
+            <!--question2-->
+            <h3></h3>
+            <span><input type="radio" name="q2" value="B1" id="answer2" /><label></label></span>
+            <span><input type="radio" name="q2" value="B2" /><label></label></span><br /><br />
+            <span><input type="radio" name="q2" value="B3" /><label></label></span>
+            <span><input type="radio" name="q2" value="B4" /><label></label></span>
+            <!--question3-->
+            <h3></h3>
+            <span><input type="radio" name="q3" value="C1" /><label></label></span>
+            <span><input type="radio" name="q3" value="C2" /><label></label></span><br /><br />
+            <span><input type="radio" name="q3" value="C3" /><label></label></span>
+            <span><input type="radio" name="q3" value="C4" id="answer3" /><label></label></span>
+            <!--question4-->
+            <h3></h3>
+            <span><input type="radio" name="q4" value="D1" /><label></label></span>
+            <span><input type="radio" name="q4" value="D2" /><label></label></span><br /><br />
+            <span><input type="radio" name="q4" value="D3" id="answer4" /><label></label></span>
+            <span><input type="radio" name="q4" value="D4" /><label></label></span>
+            <!--question5-->
+            <h3></h3>
+            <span><input type="radio" name="q5" value="E1" /><label></label></span>
+            <span><input type="radio" name="q5" value="E2" id="answer5" /><label></label></span><br /><br />
+            <span><input type="radio" name="q5" value="E3" /><label></label></span>
+            <span><input type="radio" name="q5" value="E4" /><label></label></span>
+            <!--question6-->
+            <h3></h3>
+            <span><input type="radio" name="q6" value="F1" /><label></label></span>
+            <span><input type="radio" name="q6" value="F2" id="answer6" /><label></label></span><br /><br />
+            <span><input type="radio" name="q6" value="F3" /><label></label></span>
+            <span><input type="radio" name="q6" value="F4" /><label></label></span>
+            <!--question7-->
+            <h3></h3>
+            <span><input type="radio" name="q7" value="G1" /><label></label></span>
+            <span><input type="radio" name="q7" value="G2" /><label></label></span><br /><br />
+            <span><input type="radio" name="q7" value="G3" id="answer7" /><label></label></span>
+            <span><input type="radio" name="q7" value="G4" /><label></label></span>
+            <!--question8-->
+            <h3></h3>
+            <span><input type="radio" name="q8" value="H1" /><label></label></span>
+            <span><input type="radio" name="q8" value="H2" id="answer8" /><label></label></span><br /><br />
+            <span><input type="radio" name="q8" value="H3" /><label></label></span>
+            <span><input type="radio" name="q8" value="H4" /><label></label></span>
+            <!--question9-->
+            <h3></h3>
+            <span><input type="radio" name="q9" value="I1" /><label></label></span>
+            <span><input type="radio" name="q9" value="I2" /><label></label></span><br /><br />
+            <span><input type="radio" name="q9" value="I3" id="answer9" /><label></label></span>
+            <span><input type="radio" name="q9" value="I4" /><label></label></span>
+            <!--question10-->
+            <h3></h3>
+            <span><input type="radio" name="q10" value="J1" id="answer10" /><label></label></span>
+            <span><input type="radio" name="q10" value="J2" /><label></label></span><br /><br />
+            <span><input type="radio" name="q10" value="J3" /><label></label></span>
+            <span><input type="radio" name="q10" value="J4" /><label></label></span>
+
+            <span id="timer"></span>
+            <div id="clicker"><input type="submit" id="click" value="Finish" /></div>
+
+            </div>
+        </div>
+</body>
+</html>
